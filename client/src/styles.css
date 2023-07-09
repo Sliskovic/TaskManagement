@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* @import Url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+ */
+::ng-deep .success-snackbar {
+    background-color: rgb(67, 160, 71) !important;
+}
+
+::ng-deep .error-snackbar {
+    background-color: rgb(211, 47, 47) !important;
+    color: white;
+}
+
+::ng-deep .info-snackbar {
+    background-color: rgb(82, 147, 211) !important;
+}

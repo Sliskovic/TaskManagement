@@ -1,0 +1,17 @@
+.container {
+    margin: 10px;
+}
+.priority-low {
+    background-color: rgb(86, 81, 81);
+}
+
+.priority-medium {
+    background-color: rgb(147, 99, 11);
+}
+
+.priority-high {
+    background-color: rgb(248, 9, 9);
+}
+.highlighted-text{
+    background-color: rgb(227, 227, 119) !important;;
+  }

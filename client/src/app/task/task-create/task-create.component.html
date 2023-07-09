@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="form-content">
+    <mat-toolbar class="form-toolbar" color="primary">CREATE TASK</mat-toolbar>
+    <button mat-raised-button color="primary" routerLink="/task">
+      <mat-icon>arrow_back</mat-icon><span> Back</span>
+    </button>
+    <mat-card>
+      <mat-card-content>
+        <app-task-form [taskForm]="taskForm" [priorityValues]="priorityValues" [statusValues]="statusValues"></app-task-form>
+      </mat-card-content>
+    </mat-card>
+    <br />
+    <button mat-raised-button color="primary" type="submit" (click)="createTask()" routerLink="/task">
+      Create
+    </button>
+  </div>
+</div>

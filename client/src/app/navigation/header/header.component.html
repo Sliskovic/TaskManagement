@@ -1,0 +1,15 @@
+<mat-toolbar class="navbar" color="primary">
+    <div class="title">
+      <button mat-icon-button (click)="onToggleSidenav()" matTooltip="Menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span  routerLink="/home">TASK MANAGEMENT</span>
+    </div>
+    <div class="navbar-items">
+      <span *ngIf="loggedIn" routerLink="/task">Tasks</span>
+      <span *ngIf="loggedIn" (click)="onLogout()"><mat-icon>eject</mat-icon><span> Logout</span></span>
+      <span *ngIf="!loggedIn" routerLink="/login">Log In</span>
+      <span *ngIf="!loggedIn" routerLink="/register">Register</span>
+    </div>
+  </mat-toolbar>
+  

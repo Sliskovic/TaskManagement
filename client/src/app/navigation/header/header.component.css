@@ -1,0 +1,25 @@
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  span {
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+  span:hover {
+    color: #bbb5b5;
+  }
+  /* .toolbar-item-spacer {
+      flex: 1 1 auto;
+  } */
+  .navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  

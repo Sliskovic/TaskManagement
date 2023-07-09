@@ -1,0 +1,26 @@
+<form [formGroup]="taskForm">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" />
+    <mat-error *ngIf="taskForm?.get('name')?.hasError('required')">Name is required</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <textarea matInput formControlName="description"></textarea>
+    <mat-error *ngIf="taskForm?.get('description')?.hasError('required')">Description is required</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Priority</mat-label>
+    <mat-select formControlName="priority">
+      <mat-option *ngFor="let priority of priorityValues" [value]="priority">{{ priority }}</mat-option>
+    </mat-select>
+    <mat-error *ngIf="taskForm?.get('priority')?.hasError('required')">Priority is required</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Status</mat-label>
+    <mat-select formControlName="status">
+      <mat-option *ngFor="let status of statusValues" [value]="status">{{ status }}</mat-option>
+    </mat-select>
+    <mat-error *ngIf="taskForm?.get('status')?.hasError('required')">Status is required</mat-error>
+  </mat-form-field>
+</form>

@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  
+}
+
+.login-content {
+  max-width: 400px;
+  width: 100%;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-toolbar {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+mat-form-field {
+  display: block;
+  margin-bottom: 16px;
+}
+
+mat-icon {
+  color: #ccc;
+}
+
+input {
+  font-size: 16px;
+  color: #333;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
