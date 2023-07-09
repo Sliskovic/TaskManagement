@@ -12,7 +12,7 @@
 ## General Information
 
 -  The Server is a backend application that provides authentication, user and task management.
--  The application allows users to sign up and log in securely using authentication tokens (JWT). Once logged in, users can fetch random Joke from external API and send it to user.
+-  The application allows users to sign up and log in securely using authentication tokens (JWT). Once 
 -  The app uses NestJS as the backend framework and PostgreSQL as the database.
 
 ## Technologies Used
