@@ -1,6 +1,6 @@
 # Project Name
 
-> Server
+> server
 
 ## Table of Contents
 
