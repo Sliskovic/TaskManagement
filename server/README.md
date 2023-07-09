@@ -12,7 +12,7 @@
 ## General Information
 
 -  The Server is a backend application that provides authentication, user and task management.
--  The application allows users to sign up and log in securely using authentication tokens (JWT). Once 
+-  The application allows users to sign up and log in securely using authentication tokens (JWT) and manage tasks.
 -  The app uses NestJS as the backend framework and PostgreSQL as the database.
 
 ## Technologies Used
@@ -75,7 +75,7 @@ In orded to run this project first clone this repository with following command:
     ```bash
     docker volume create pgdata 
 
-6. Run the project using Docker Compose. Start the containers by running the following command:
+6. Run the project using Docker Compose. Start the containers by running the following command: **docker installed
     ```bash
     docker-compose up --build
   
