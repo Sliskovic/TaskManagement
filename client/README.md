@@ -16,12 +16,11 @@ The Task Manager App is a web application built with Angular that allows users t
 
 ## Technologies Used
 
-Angular - version 16.1.0
-Angular Material
-RxJS
+ - Angular - version 16.1.0
+ - Angular Material
+ - RxJS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
-
 
 ## Features
 
@@ -34,31 +33,26 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  - Authentication and Authorization: Implements authentication and authorization to restrict access to certain views and APIs. Auth Guard: checks if the authenticated user has the necessary role to access a particular view or perform a specific action. If the user lacks the required role, redirect them to Login page.
  - Custom Directive: Includes a custom directive to highlight the priority of a task in the task list view.
 
-
 Setup
+
 In orded to run this project first clone this repository with following command:
 1. Clone this repository by running the following command:
 
      ```bash
-   git clone https://github.com/Sliskovic/TaskManagementApp
+   git clone https://github.com/Sliskovic/TaskManagement
 
 2. Navigate to the project's directory:
    
      ```bash
-   cd TaskManagementApp
+   cd client
+
 
 3. Install the project dependencies with the following commands:
-
      ```bash
      npm install
 
-
-4. Install the project dependencies with the following commands:
-     ```bash
-     npm install
-
-5.  Run Server (view Readme)
+4.  Run server (view Server Readme)
 
 5.  Run Client
      ```bash
-    npm install
+    npm run start
