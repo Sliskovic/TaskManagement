@@ -1,6 +1,6 @@
 # Project Name
 
-> Chuck Norris Joke app
+> Server
 
 ## Table of Contents
 
