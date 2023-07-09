@@ -8,7 +8,6 @@
 - [Features](#features)
 - [Setup](#setup)
 
-
 ## General Information
 
 The Task Manager App is a web application built with Angular that allows users to manage tasks.
