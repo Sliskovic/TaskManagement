@@ -1,4 +1,4 @@
-# Task Management Aoo
+# Task Management App
 > Client
 
 ## Table of Contents
@@ -30,7 +30,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  - Angular Material: Incorporates Angular Material components to provide a user-friendly interface.
   - Observables and RxJS: Uses  to handle asynchronous operations.
  - Authentication and Authorization: Implements authentication and authorization to restrict access to certain views and APIs. Auth Guard: checks if the authenticated user has the necessary role to access a particular view or perform a specific action. If the user lacks the required role, redirect them to Login page.
- - Custom Directive: Includes a custom directive to highlight the priority of a task in the task list view.
+ - Custom Directive: Includes a custom directive to highlight the priority of a task, and highlight searched term in the task list view.
 
 Setup
 
