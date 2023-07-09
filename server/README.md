@@ -11,9 +11,9 @@
 
 ## General Information
 
--  The Chuck Norris Joke app is a backend application that provides authentication, user management, and a feature to fetch and send random jokes to logged-in users. 
+-  The Server is a backend application that provides authentication, user and task management.
 -  The application allows users to sign up and log in securely using authentication tokens (JWT). Once logged in, users can fetch random Joke from external API and send it to user.
--  The app uses NestJS as the backend framework and PostgreSQL as the database, Axios for making requests to external APIs and Nodemailer for sending email.
+-  The app uses NestJS as the backend framework and PostgreSQL as the database.
 
 ## Technologies Used
 
@@ -29,8 +29,7 @@
 
 - Authentication: Implements user authentication using JWT (JSON Web Tokens) for managing user sessions and securing the endpoints.
 - User: Enables users to create accounts and store in a model that includes unique email, hashed password, first name, last name and date.
-- Search Jokes: The application provides an authorized endpoint to fetch a random joke from the Chuck Norris API (https://api.chucknorris.io/). The fetched joke is then sent to the logged-in user.
-- Email Notifications: The application incorporates email notification functionality using the Nodemailer library. The app utilizes a configured email service, such as Gmail. The configuration includes setting up the necessary SMTP (Simple Mail Transfer Protocol) credentials, such as the email provider's server address, port number, authentication details, and secure connection settings.
+- Task: Enables users to create tasks and store in a model that includes unique name, description, status, actions.
 - Error Handling: Implements error handling mechanisms to handle exceptions and provide informative error messages to users. Handles validation errors, authentication failures, and other potential errors that may occur during application execution.
 - Testing: Includes some test suite to verify the functionality and integrity of the application. 
 
@@ -45,7 +44,7 @@ In orded to run this project first clone this repository with following command:
 2. Navigate to the project's directory:
    
      ```bash
-   cd ChuckNorrisJokeApp
+   cd Server
 
 3. Create a .env file in the root directory of the project.
   Fill in the .env file with the required configuration data and secrets. For example: [^.env]
@@ -64,11 +63,6 @@ In orded to run this project first clone this repository with following command:
         # JWT
         JWT_SECRET=secret
         JWT_EXP=1h
-
-        # STMP
-        MAIL_HOST=smtp.gmail.com
-        SMTP_USERNAME=<your-email.@gmail.com>
-        SMTP_PASSWORD=<your-password-third-app-password>
 
         # API
         API_URL=https://api.chucknorris.io/jokes/random 
