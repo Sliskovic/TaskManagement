@@ -18,9 +18,11 @@ describe('AppController', () => {
   });
 
   describe('getHello', () => {
-    it('should return "Hello!"', () => {
-      const expectedResult = 'Hello, Welcome!';
-      expect(appController.getHello()).toBe('Hello, Welcome!');
+    it('should return "Hello, Welcome to Task Management App!"', () => {
+      const expectedResult = 'Hello, Welcome to Task Management App!';
+      expect(appController.getHello()).toBe(
+        'Hello, Welcome to Task Management App!',
+      );
       jest.spyOn(appService, 'getHello').mockReturnValue(expectedResult);
       const result = appController.getHello();
       expect(result).toBe(expectedResult);
