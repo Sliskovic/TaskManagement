@@ -51,7 +51,9 @@ In orded to run this project first clone this repository with following command:
     ```
 3.  Create a .env file in the root directory of the project.
     Fill in the .env file with the required configuration data and secrets. For example: [^.env]
-    [^.env]: ```bash # APPLICATION
+    [^.env]:
+     ```bash
+     # APPLICATION
     APP_PORT=3000
     NODE_ENV=development # DATABASE
     DB_USER=postgres
@@ -65,27 +67,27 @@ In orded to run this project first clone this repository with following command:
           JWT_SECRET=secret
           JWT_EXP=1h
 
-4.  Install the project dependencies with the following commands:
+5.  Install the project dependencies with the following commands:
 
     ```bash
     npm install
 
     ```
 
-5.  Before starting the application, create a Docker volume for PostgreSQL data by executing the following command:
+6.  Before starting the application, create a Docker volume for PostgreSQL data by executing the following command:
 
     ```bash
     docker volume create pgdata
 
     ```
 
-6.  Run the project using Docker Compose. Start the containers by running the following command: \*\*docker installed
+7.  Run the project using Docker Compose. Start the containers by running the following command: \*\*docker installed
 
     ```bash
     docker-compose up --build
 
     ```
 
-7.  Once the application is up and running, you can access it by opening your web browser and visiting the following URLs:
+8.  Once the application is up and running, you can access it by opening your web browser and visiting the following URLs:
     - NestJS application: http://localhost:3000
     - Adminer (database management tool): http://localhost:8080
