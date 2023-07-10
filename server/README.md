@@ -63,9 +63,9 @@ In orded to run this project first clone this repository with following command:
     DB_PORT=5432
     POSTGRES_PASSWORD=postgres
 
-          # JWT
-          JWT_SECRET=secret
-          JWT_EXP=1h
+    # JWT
+     JWT_SECRET=secret
+     JWT_EXP=1h
 
 5.  Install the project dependencies with the following commands:
 
