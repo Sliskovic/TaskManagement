@@ -2,7 +2,6 @@ import { HttpAdapterHost, NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ConfigService } from '@nestjs/config';
 import { HttpStatus, Logger, ValidationPipe } from '@nestjs/common';
-import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 import { HttpExceptionFilter } from './common-exceptions/global-filter/http-exception.filter';
 import { AllExceptionsFilter } from './common-exceptions/global-filter/all-exceptions.filter';
@@ -30,17 +29,6 @@ async function bootstrap() {
     optionsSuccessStatus: HttpStatus.NO_CONTENT,
   });
 
-  // // Swagger configuration
-  // const swaggerConfig = new DocumentBuilder()
-  //   .setTitle('Task management app')
-  //   .setDescription('API documentation for Task management app')
-  //   .setVersion('1.0')
-  //   .addBearerAuth()
-  //   .build();
-  // const document = SwaggerModule.createDocument(app, swaggerConfig);
-  // delete document.paths['/'];
-  // SwaggerModule.setup('api', app, document);
-
   // Global filters
   app.useGlobalFilters(
     new HttpExceptionFilter(configService),
@@ -60,7 +48,6 @@ async function bootstrap() {
   await app.listen(port);
   logger.verbose(`Application is running on: http://localhost:${port}`);
   logger.verbose(`Database is running on: http://localhost:8080`);
-  logger.verbose(`Swagger is running on: http://localhost:${port}/api`);
 }
 
 bootstrap().catch((error) => {
