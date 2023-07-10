@@ -43,14 +43,12 @@ In orded to run this project first clone this repository with following command:
     git clone https://github.com/Sliskovic/TaskManagement
 
     ```
-
 2.  Navigate to the project's directory:
 
     ```bash
     cd Server
 
     ```
-
 3.  Create a .env file in the root directory of the project.
     Fill in the .env file with the required configuration data and secrets. For example: [^.env]
     [^.env]: ```bash # APPLICATION
@@ -91,4 +89,3 @@ In orded to run this project first clone this repository with following command:
 7.  Once the application is up and running, you can access it by opening your web browser and visiting the following URLs:
     - NestJS application: http://localhost:3000
     - Adminer (database management tool): http://localhost:8080
-    - Swagger (testing endpoints) http://localhost:3000/api
