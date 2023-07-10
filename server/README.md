@@ -53,19 +53,21 @@ In orded to run this project first clone this repository with following command:
     Fill in the .env file with the required configuration data and secrets. For example: [^.env]
     [^.env]:
      ```bash
-     # APPLICATION
-    APP_PORT=3000
-    NODE_ENV=development # DATABASE
-    DB_USER=postgres
-    DB_PASSWORD=postgres
-    DB_NAME=postgres
-    DB_HOST=db
-    DB_PORT=5432
-    POSTGRES_PASSWORD=postgres
-
-    # JWT
-     JWT_SECRET=secret
-     JWT_EXP=1h
+        # APPLICATION
+        APP_PORT=3000
+        NODE_ENV=development
+        
+        # DATABASE
+        DB_USER=postgres
+        DB_PASSWORD=postgres
+        DB_NAME=postgres
+        DB_HOST=db
+        DB_PORT=5432
+        POSTGRES_PASSWORD=postgres
+        
+        # JWT
+        JWT_SECRET=secret
+        JWT_EXP=1h
 
 5.  Install the project dependencies with the following commands:
 
